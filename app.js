@@ -65,6 +65,7 @@ app.post("/failure", function(req, res){
 
 //api key : 1965988c5f892e6bb8398471ac41dd8f-us21
 // unique list id : 2b9da8ca24
-app.listen(3000,function(){
+//WEB PAGE WORK SAME TIME  ON ONLINE SERVER AND LOCAL HOST
+app.listen(process.env.PORT || 3000,function(){
     console.log("Server port 3000 is ready");
   });
